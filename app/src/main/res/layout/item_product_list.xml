@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:elevation="@dimen/space5"
+    android:layout_height="220dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="165dp"
+            app:cardCornerRadius="@dimen/space10"
+            android:layout_marginLeft="@dimen/space10"
+            android:layout_marginRight="@dimen/space10"
+            android:layout_marginTop="@dimen/space10"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/image2"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/filtre"
+                    >
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/space5"
+            android:gravity="center_vertical"
+        >
+           <RelativeLayout
+               android:layout_width="25dp"
+               android:layout_height="25dp"
+               android:layout_marginLeft="@dimen/space10"
+               android:background="@drawable/rounded_corner"
+               >
+               <ImageView
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:src="@drawable/ic_thumb_up"
+                   android:padding="2dp"
+                   android:layout_marginTop="5dp"
+                   android:layout_centerInParent="true"
+                   />
+           </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="94%"
+                android:fontFamily="@font/montseratatregular"
+                android:layout_marginLeft="@dimen/space10"
+                android:textSize="16dp"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:layout_marginLeft="@dimen/space5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(347)"
+                android:fontFamily="@font/montseratatregular"
+                android:textSize="12dp"
+                />
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                >
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                     android:src="@drawable/scooter"
+                    android:layout_marginRight="@dimen/space5"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:background="@drawable/semi_rounded"
+                    android:text="GRATUIT"
+                    android:fontFamily="@font/montseratatregular"
+                    android:padding="@dimen/space5"
+                    android:textStyle="bold"
+                    />
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1.3Km"
+                    android:layout_marginLeft="@dimen/space10"
+                    android:layout_marginRight="@dimen/space10"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/montseratatregular"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

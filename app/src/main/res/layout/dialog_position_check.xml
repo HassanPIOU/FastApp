@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="6dp">
+<RelativeLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+        android:text="Découvrez les boutiques et restaurants de votre ville"
+       android:layout_marginTop="@dimen/space20"
+       android:layout_centerHorizontal="true"
+       android:gravity="center"
+        android:textColor="#000"
+        android:textSize="28dp"
+       android:layout_marginLeft="30dp"
+       android:layout_marginRight="30dp"
+       android:id="@+id/topposi"
+
+       />
+    <ImageView
+        android:layout_below="@+id/topposi"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/markermap"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:id="@+id/maptopimg"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Activez les services de localisation pour découvrir toutes les boutiques et tous les restaurants à votre portée."
+         android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:gravity="center"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+         android:layout_below="@+id/maptopimg"
+        android:textSize="@dimen/space20"
+        />
+
+     <Button
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+          android:text="PARTAGER MA POSITION"
+         android:id="@+id/shareposition"
+         android:layout_marginLeft="30dp"
+         android:layout_marginRight="30dp"
+         android:textSize="18dp"
+         android:padding="20dp"
+         android:background="@color/colorAccent"
+         android:textColor="@color/white"
+          android:layout_above="@id/positionafter"
+         />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PLUS TARD"
+         android:id="@+id/positionafter"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:padding="25dp"
+        android:background="@color/white"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:fontFamily="@font/righteous"
+        android:textColor="@color/colorAccent"
+         android:layout_alignParentBottom="true"
+        android:textSize="@dimen/space20"
+        />
+</RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">FastAp</string>
+
+    <string name="politique_conf">En continuant, vous avez lu et accepté nos  <a href="https://www.google.tg/">Termes et Conditions</a> et notre
+        <a href="https://www.google.tg/">Politique de confidentialité</a></string>
+    <string name="facebook_app_id">193289011755011</string>
+    <string name="fb_login_protocol_scheme">fb193289011755011</string>
+    <string name="condition">Conditions générales et confidentialité</string>
+    <string name="condition_gene1">Nous utilisons les données de nos utilisateurs pour améliorer notre qualités de services et communiquer des offres promotionnelles.</string>
+    <string name="condition_gene2">Pour continuer, vous avez lu et accepté nos  <a href="https://www.google.tg/">Termes et Conditions</a> et notre
+        <a href="https://www.google.tg/">Politique de confidentialité </a> et notre <a href="https://www.google.tg/">Politique de cookies</a></string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="api_key">android.studio@android.com</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_product_list">ProductListActivity</string>
+
+</resources>

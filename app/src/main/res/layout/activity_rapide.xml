@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.basic.updates.UpdateActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:elevation="@dimen/space10"
+        android:id="@+id/top"
+        >
+        <ImageView
+            android:layout_marginLeft="@dimen/space20"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_arrow"
+            android:tint="#000"
+             android:layout_gravity="center_vertical"
+            android:id="@+id/toback"
+            android:layout_marginTop="@dimen/space10"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space10"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:text="Commander quelques chose"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+   <androidx.core.widget.NestedScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_below="@id/top"
+       >
+       <RelativeLayout
+           android:id="@+id/passwordrelativeupdate"
+           android:layout_marginTop="10dp"
+           android:layout_below="@id/top"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           >
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               >
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="COMMANDE(S)"
+                   android:layout_marginLeft="@dimen/space10"
+                   />
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="0.2dp"
+                   android:layout_alignParentBottom="true"
+                   android:background="@color/grey_20"
+                   android:layout_marginTop="@dimen/space5"
+                   android:layout_marginBottom="@dimen/space10"
+                   android:layout_marginLeft="@dimen/space10"
+                   android:layout_marginRight="@dimen/space10"
+                   />
+
+               <EditText
+                   android:layout_width="match_parent"
+                   android:layout_height="50dp"
+                   android:hint="Votre commande ici"
+                    android:textSize="14dp"
+                   android:fontFamily="@font/montseratatregular"
+                   android:layout_marginLeft="@dimen/space10"
+                   android:layout_marginRight="@dimen/space10"
+                   />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="ADRESSE DE LIVRAISON"
+                   android:layout_marginTop="@dimen/space10"
+                   android:layout_marginLeft="@dimen/space10"
+                   />
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="0.2dp"
+                   android:layout_alignParentBottom="true"
+                   android:background="@color/grey_20"
+                   android:layout_marginTop="@dimen/space5"
+                   android:layout_marginBottom="@dimen/space10"
+                   android:layout_marginLeft="@dimen/space10"
+                   android:layout_marginRight="@dimen/space10"
+                   />
+
+               <EditText
+                   android:layout_width="match_parent"
+                   android:layout_height="50dp"
+                   android:hint="Où voulez-vous le faire livrer ?"
+                   android:layout_marginLeft="@dimen/space10"
+                   android:layout_marginRight="@dimen/space10"
+                   android:textSize="14dp"
+                   android:id="@+id/destination"
+                   android:drawableRight="@drawable/caret_right"
+                   android:drawableLeft="@drawable/flag"
+                   android:drawablePadding="@dimen/space10"
+                   android:fontFamily="@font/montseratatregular"
+                   />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="HEURE DE LIVRAISON"
+                   android:layout_marginLeft="@dimen/space10"
+                   android:layout_marginTop="@dimen/space10"
+                   />
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="0.2dp"
+                   android:layout_alignParentBottom="true"
+                   android:background="@color/grey_20"
+                   android:layout_marginTop="@dimen/space5"
+                   android:layout_marginBottom="@dimen/space10"
+                   android:layout_marginLeft="@dimen/space10"
+                   android:layout_marginRight="@dimen/space10"
+                   />
+
+               <EditText
+                   android:layout_width="match_parent"
+                   android:layout_height="50dp"
+                   android:hint="Dès que possible"
+                   android:layout_marginLeft="@dimen/space10"
+                   android:layout_marginRight="@dimen/space10"
+                   android:textSize="14dp"
+                   android:drawableLeft="@drawable/date"
+                   android:drawablePadding="@dimen/space10"
+                   android:fontFamily="@font/montseratatregular"
+                   />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="MOYEN DE PAIEMENT"
+                   android:layout_marginLeft="@dimen/space10"
+                   android:layout_marginTop="@dimen/space10"
+                   />
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="0.2dp"
+                   android:layout_alignParentBottom="true"
+                   android:background="@color/grey_20"
+                   android:layout_marginTop="@dimen/space5"
+                   android:layout_marginBottom="@dimen/space10"
+                   android:layout_marginLeft="@dimen/space10"
+                   android:layout_marginRight="@dimen/space10"
+                   />
+
+               <EditText
+                   android:id="@+id/paymethod"
+                   android:layout_width="match_parent"
+                   android:layout_height="50dp"
+                   android:hint="Choisir un moyen de paiement"
+                   android:textSize="14dp"
+                   android:drawableLeft="@drawable/money2"
+                   android:drawablePadding="@dimen/space10"
+                   android:fontFamily="@font/montseratatregular"
+                   android:layout_marginLeft="@dimen/space10"
+                   android:drawableRight="@drawable/caret_down"
+                   android:layout_marginRight="@dimen/space10"
+                   android:inputType="date"
+                   />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="TELEPHONE DE CONTACT"
+                   android:layout_marginLeft="@dimen/space10"
+                   android:layout_marginTop="@dimen/space10"
+                   />
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="0.2dp"
+                   android:layout_alignParentBottom="true"
+                   android:background="@color/grey_20"
+                   android:layout_marginTop="@dimen/space5"
+                   android:layout_marginBottom="@dimen/space10"
+                   android:layout_marginLeft="@dimen/space10"
+                   android:layout_marginRight="@dimen/space10"
+                   />
+               <EditText
+                   android:layout_width="match_parent"
+                   android:layout_height="50dp"
+                   android:textSize="14dp"
+                   android:fontFamily="@font/montseratatregular"
+                   android:hint="Votre numéro de téléphone ?"
+                   android:drawablePadding="@dimen/space10"
+                   android:drawableLeft="@drawable/phone"
+                   android:inputType="number"
+                   android:layout_marginLeft="@dimen/space10"
+                   android:layout_marginRight="@dimen/space10"
+                   />
+
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="@dimen/space10"
+                   android:layout_marginLeft="@dimen/space10"
+                   android:layout_marginRight="@dimen/space10"
+                   >
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Article"
+                       android:fontFamily="@font/montseratatregular"
+                       android:textSize="16dp"
+                       />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="3000 XOF"
+                       android:fontFamily="@font/montseratatregular"
+                       android:textSize="16dp"
+                       android:layout_alignParentRight="true"
+                       />
+
+               </RelativeLayout>
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="@dimen/space10"
+                   android:layout_marginLeft="@dimen/space10"
+                   android:layout_marginRight="@dimen/space10"
+                   >
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Livraison"
+                       android:fontFamily="@font/montseratatregular"
+                       android:textSize="16dp"
+                       />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="500 XOF"
+                       android:fontFamily="@font/montseratatregular"
+                       android:textSize="16dp"
+                       android:layout_alignParentRight="true"
+                       />
+
+               </RelativeLayout>
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="@dimen/space10"
+                   android:layout_marginLeft="@dimen/space10"
+                   android:layout_marginRight="@dimen/space10"
+                   >
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="TOTAL ESTIME"
+                       android:fontFamily="@font/montseratatregular"
+                       android:textSize="16dp"
+                       />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="3500 XOF"
+                       android:fontFamily="@font/montseratatregular"
+                       android:textSize="16dp"
+                       android:layout_alignParentRight="true"
+                       />
+
+               </RelativeLayout>
+                  <TextView
+                      android:padding="@dimen/space10"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="@dimen/space10"
+                      android:layout_marginBottom="90dp"
+                      android:textStyle="italic"
+                      android:text="@string/condition_gene1"
+                      />
+           </LinearLayout>
+
+       </RelativeLayout>
+   </androidx.core.widget.NestedScrollView>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="VALIDER MA COMMANDE"
+        android:id="@+id/shareposition"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="18dp"
+        android:padding="20dp"
+        android:fontFamily="@font/montseratatregular"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/space20"
+        />
+</RelativeLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/updatenumberlayout"
+    tools:context=".activities.basic.updates.NumberUpdateActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:elevation="@dimen/space10"
+        android:id="@+id/top"
+        >
+        <ImageView
+            android:layout_marginLeft="@dimen/space20"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_arrow"
+            android:tint="#000"
+            android:id="@+id/toback"
+            android:layout_marginTop="@dimen/space10"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space10"
+            android:textSize="18dp"
+            android:layout_centerHorizontal="true"
+            android:text="Modifications"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:text="Mes Informations"
+            android:layout_alignParentBottom="true"
+            android:background="@color/grey_90"
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/numberrelativeupdate"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NUMERO DE TELEPHONE ACTUEL"
+                android:layout_marginLeft="@dimen/space10"
+                />
+
+            <EditText
+                android:id="@+id/oldnumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="numéro de téléphone actuel"
+                android:layout_marginLeft="@dimen/space10"
+                android:layout_marginRight="@dimen/space10"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NOUVEAU NUMERO DE TELEPHONE"
+                android:layout_marginLeft="@dimen/space10"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/newnumber"
+                android:hint="Nouveau numero de téléphone"
+                android:layout_marginLeft="@dimen/space10"
+                android:layout_marginRight="@dimen/space10"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:layout_above="@+id/submitupdate"
+        android:layout_marginBottom="@dimen/space10"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TERMINER"
+        android:textColor="@color/colorAccent"
+        android:layout_marginRight="@dimen/space20"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/submitupdatenumber"
+        android:textStyle="bold"
+        android:layout_marginBottom="@dimen/space20"
+        />
+</RelativeLayout>

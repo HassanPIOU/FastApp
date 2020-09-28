@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/menu_top"
+        >
+        <item
+            android:id="@+id/userinfo"
+            android:icon="@drawable/ic_person"
+            android:title="Mes informations"/>
+        <item
+            android:id="@+id/paymentmethod"
+            android:icon="@drawable/ic_payment"
+            android:title="Moyens de paiement"/>
+        <item
+            android:id="@+id/help"
+            android:icon="@drawable/ic_email"
+            android:title="Aide"/>
+
+        <item
+            android:id="@+id/parrainage"
+            android:icon="@drawable/ic_card_giftcard"
+            android:title="Parrainez vos amis !"/>
+
+        <item
+            android:id="@+id/promocode"
+            android:icon="@drawable/offer"
+            android:title="Code promo"/>
+        <item
+            android:id="@+id/faq"
+            android:icon="@drawable/ic_help"
+            android:title="F.A.Q"/>
+    </group>
+
+    <group
+        android:id="@+id/menu_bottom"
+        >
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/ic_power_settings"
+            android:title="Se déconnecter" >
+        </item>
+    </group>
+</menu>

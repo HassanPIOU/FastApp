@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/when_connexion_gone"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/top"
+            >
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_person"
+                android:tint="@color/white"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="@dimen/space10"
+                android:id="@+id/userinfo"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/dialogtoggle"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Definir un point de livraison"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="@dimen/space20"
+                    android:id="@+id/defin"
+                    android:textSize="16dp"
+                    />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_arrow_drop_down"
+                    android:tint="@color/white"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/defin"
+                    />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_share"
+                android:tint="@color/white"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="@dimen/space10"
+                android:layout_alignParentRight="true"
+                android:id="@+id/share"
+                />
+
+        </RelativeLayout>
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_above="@+id/noconnection"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/space10"
+          android:src="@drawable/wifioff"
+            android:tint="#bbbbbb"
+            android:id="@+id/noconnectionpic"
+            />
+         <TextView
+             android:id="@+id/noconnection"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_centerInParent="true"
+             android:text="Problème de connexion internet"
+             android:gravity="center"
+             android:textStyle="bold"
+             android:textSize="18dp"
+              android:textColor="#bbbbbb"
+             />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/noconnection"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/refresh"
+            android:tint="#bbbbbb"
+            android:id="@+id/noconnectionpictorefresh"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/content_main_main"
+        >
+        <include
+            layout="@layout/content_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:visibility="gone"
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        android:theme="@style/NavigationDrawerStyle"
+        app:menu="@menu/drawer"
+        app:headerLayout="@layout/nav_header_main"
+        />
+
+</androidx.drawerlayout.widget.DrawerLayout>

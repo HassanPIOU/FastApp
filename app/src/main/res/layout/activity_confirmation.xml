@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.LoginActivity"
+    >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Confirmation"
+        android:id="@+id/topTitle"
+        android:textSize="28dp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+         android:gravity="center"
+        android:layout_below="@+id/topTitle"
+        android:text="Veuillez saisir le code de confirmation envoyé  par SMS"
+        android:textSize="14dp"
+        />
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:background="@drawable/halfcircle"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/halfcircle"
+        android:layout_marginBottom="-250dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="43.3dp"
+        android:layout_marginTop="70dp"
+        android:orientation="vertical">
+
+
+        <com.chaos.view.PinView
+            android:id="@+id/confirmationPin"
+            style="@style/PinWidget.PinView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textSize="18sp"
+            app:itemCount="5"
+            android:layout_gravity="center"
+            app:itemHeight="48dp"
+            app:itemRadius="10dp"
+            app:lineColor="@android:color/darker_gray"
+            app:viewType="rectangle" />
+
+
+        <TextView
+            android:layout_width="183dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/rounded_corner"
+            android:gravity="center"
+            android:id="@+id/confirmValidation"
+            android:text="CONFIRMER"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center"
+            android:textSize="13sp" />
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

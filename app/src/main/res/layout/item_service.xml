@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="80dp"
+    android:id="@+id/serviceLinear"
+    android:layout_marginBottom="@dimen/space10"
+    android:layout_marginTop="@dimen/space10"
+    android:layout_height="80dp">
+    <RelativeLayout
+        android:id="@+id/ptidej"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/halfcircle"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/space10"
+        android:layout_marginBottom="-20dp"
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/space10"
+            android:src="@drawable/bus"
+            android:id="@+id/logoservice"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transport Scolaire privé"
+            android:layout_below="@id/logoservice"
+            android:gravity="center"
+            android:id="@+id/service_title"
+            android:layout_centerHorizontal="true"
+            android:textSize="9dp"
+            />
+    </RelativeLayout>
+
+</LinearLayout>
